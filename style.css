@@ -1,0 +1,120 @@
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.container{
+  border-radius: 20px;
+  padding: 90px;
+  /* padding: 40px; */
+  text-align: center;
+  color: white;
+  background-color: #2346C0 ;
+  width: 60%;
+  border: 20px solid #DDE6FA;
+  height: 150px;
+}
+
+.second{
+border-radius: 10px;
+}
+
+svg{
+  padding: 10px;
+  border-radius: 50%;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  left: -48px;
+  bottom: -16px;
+  cursor: pointer;
+}
+input{
+  /* align-items: center; */
+  border-radius: 100px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  background-color:#7E94DF ;
+  color: white;
+  margin-bottom: 10px;
+  
+}
+input::placeholder{
+  color: white;
+  position: relative;
+  left: 40px;
+  font-size: 15px;
+}
+input:focus{
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+input:hover{
+  opacity: 0.8;
+}
+input:focus::placeholder{
+ color: transparent;
+}
+.img-container{
+  display: flex;
+  justify-content: space-around;
+}
+img{
+  border: 5px solid white;
+  border-radius: 100%;
+  position: relative;
+  top: 55px;
+  }
+      @media (max-width: 650px){
+          .container{
+              font-size: 15px;
+          }
+          input{
+              height: 30px;
+              width: 150px;
+          }
+          svg{
+          /* display: none; */
+          height: 5px;
+          height: 5px;
+          position: relative;
+          top: 7.7px;
+          left: -32px;
+
+      }
+      input::placeholder{
+          font-size: 10px;
+          text-align: start;
+          position: relative;
+          left: 10px;
+      }
+      img{
+          position: relative;
+          /* top: 90px; */
+          height: 20px;
+      }
+      }
+        
+        @media (max-width:314px){
+             svg{
+              display: none;
+             }
+          input{
+              height: 20px;
+                  width: 100px;
+          }
+             .container{
+              font-size: 10px;
+             }
+             img{
+              height: 20px
+             }
+        }
