@@ -8,22 +8,30 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+main{
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1rem;
+   background: #dde5f9;
+  padding: 1.1rem;
+  
+}
 .container{
-  border-radius: 20px;
-  padding: 90px;
-  /* padding: 40px; */
+  border-radius: 1rem;
+  padding: 3rem;
   text-align: center;
   color: white;
   background-color: #2346C0 ;
-  width: 60%;
-  border: 20px solid #DDE6FA;
-  height: 150px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
-
-.second{
-border-radius: 10px;
+h2{
+  letter-spacing: 0.9px;
 }
-
 svg{
   padding: 10px;
   border-radius: 50%;
@@ -65,56 +73,19 @@ input:focus::placeholder{
 }
 .img-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: -3rem;
 }
 img{
-  border: 5px solid white;
-  border-radius: 100%;
-  position: relative;
-  top: 55px;
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.3rem;
   }
-      @media (max-width: 650px){
-          .container{
-              font-size: 15px;
-          }
-          input{
-              height: 30px;
-              width: 150px;
-          }
-          svg{
-          /* display: none; */
-          height: 5px;
-          height: 5px;
-          position: relative;
-          top: 7.7px;
-          left: -32px;
 
-      }
-      input::placeholder{
-          font-size: 10px;
-          text-align: start;
-          position: relative;
-          left: 10px;
-      }
-      img{
-          position: relative;
-          /* top: 90px; */
-          height: 20px;
-      }
-      }
         
-        @media (max-width:314px){
-             svg{
-              display: none;
-             }
-          input{
-              height: 20px;
-                  width: 100px;
-          }
-             .container{
-              font-size: 10px;
-             }
-             img{
-              height: 20px
-             }
-        }
+      
